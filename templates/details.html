@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Info</title>
+</head>
+<body>
+<h2>Personal Info</h2>
+<form action="detailsview/" method="post">
+    {% csrf_token %}
+    <input type="text" name="Name : " placeholder="Username"><br>
+    <input type="date" name="Dob : " placeholder="Dob"><br>
+    <input type="text" name="Gender : " placeholder="Gender"><br>
+    <input type="email" name="Email : " placeholder="Email"><br>
+    <input type="text" name="Address : " placeholder="Address"><br><br>
+
+        Trivandrum: <select name="Trivandrum" id="Trv">
+        <option value="" selected="selected">select</option>
+        <option value="">kowdiar</option>
+        <option value="">kovalam</option>
+        <option value="">kazhakuttam</option>
+        </select><br><br>
+        Kochi : <select name="kochi" id="kochi">
+        <option value="" selected="selected">select</option>
+        <option value="" >panampally nagar</option>
+        <option value="" >kaloor</option>
+        <option value="" >kakkanad</option>
+        </select>
+        <br><br>
+        Kozhikod : <select name="kozhikod" id="Kozhikod">
+        <option value="" selected="selected">select</option>
+        <option value="">kappad</option>
+        <option value="">Beypoor</option>
+        <option value="">kuttichira</option>
+        </select>
+        <br><br>
+    <input type="submit" value="Submit">
+    <button onclick="window.open('/logout/')">Logout</button>
+    </select>
+
+    <div>
+        <h4>payment Method</h4>
+    <input type="checkbox" id="debit" name="scales" />
+    <label for="scales">Debit Card</label>
+        <div>
+    <input type="checkbox" id="credit" name="scales" />
+    <label for="scales">Credit Card</label>
+            <div>
+    <input type="checkbox" id="cheque" name="scales" />
+    <label for="scales">Cheque Book</label>
+  </div>
+  </div>
+  </div>
+    <button onclick="window.open('')">Home</button>
+</form>
+</body>
+</html>
